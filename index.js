@@ -8,7 +8,7 @@ dotenv.config();
 console.log(process.env)
 
 const app=express();
-const PORT=7000;
+const PORT=process.env.PORT
 
 //middleware to convert data into json//
 app.use(express.json()) //inbuild//
