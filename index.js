@@ -27,7 +27,7 @@ return client;
 
 //node js server//
 app.get("/",(request,response)=>{
-    response.send("hello world 😍")
+    response.send("hello world 😍😊")
 });
 app.use("/products",productRouter)
  
