@@ -2,14 +2,15 @@ import dotenv from "dotenv";
 import express, { request } from 'express';
 import { MongoClient } from 'mongodb';
 import { productRouter } from "./router/product.js";
+import cors from 'cors';
 
 
 dotenv.config();
-console.log(process.env)
+// console.log(process.env)//
 
 const app=express();
 const PORT=process.env.PORT
-
+app.use(cors());
 //middleware to convert data into json//
 app.use(express.json()) //inbuild//
 
